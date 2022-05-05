@@ -12,6 +12,6 @@ if (n1 > n2 && n1 > n3) {
   console.log("EL MAYOR ES: ", n2);
 } else if (n3 > n2 && n3 > n1) {
   console.log("EL MAYOR ES: ", n3);
-} else if (n1 == n2 && n1 == n3) {
+} else if (n1 === n2 && n1 === n3) {
   console.log("ERROR, LOS 3 NUMEROS SON IGUALES");
 }

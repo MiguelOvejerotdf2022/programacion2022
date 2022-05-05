@@ -2,4 +2,16 @@
 ingresado por el usuario determine si el número es par
 o impar y le informe al usuario.
 En el caso de ser 0 (cero) el algoritmo deberá  informarlo 
-con switch*/
+con switch */
+let num: number = Number(prompt("Ingrese un Numero: "));
+
+if (num % 2 === 0) {
+  console.log("El Numero ingresado es PAR");
+} else if (num % 2 !== 0) {
+  console.log("El Numero ingresado es IMPAR");
+}
+switch (num) {
+  case 0:
+    console.log("El Numero ingresado es 0");
+    break;
+}
