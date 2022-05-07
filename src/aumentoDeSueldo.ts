@@ -1,7 +1,7 @@
 /*Una empresa desea premiar a sus empleados con un
 aumento de sueldo. Este aumento se ajusta a la siguiente tabla:
 
-Sueldo Actual Sueldo con Aumento
+Sueldo Actual         Sueldo con Aumento
 0 - 15.000$          20%
 15.001 - 20.000$     10%
 20.001 - 25.000$     5%
