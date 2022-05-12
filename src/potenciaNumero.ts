@@ -13,4 +13,5 @@ while (exponente < 0) {
 if (exponente === 0) {
   basexExponente = 0;
 }
+basexExponente = base ^ exponente;
 console.log("El resultado es: ", basexExponente);
