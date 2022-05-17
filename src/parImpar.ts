@@ -6,7 +6,7 @@ con switch */
 let num: number = Number(prompt("Ingrese un Numero: "));
 
 while (num === 0) {
-  num = Number(prompt("Vuelva a REINGRESAR: "));
+  num = Number(prompt("Vuelva a REINGRESAR( Numero MAYOR a 0 ): "));
 }
 if (num % 2 === 0) {
   console.log("El Numero ingresado es PAR");
