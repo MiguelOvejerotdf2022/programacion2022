@@ -6,21 +6,6 @@ resto es cero
 • Recuerde que la operación mod permite saber si el resto de
 una división es cero*/
 
-/*function esMultiplo(num1: number, num2: number): boolean {
-  if (num1 % num2 === 0) {
-    console.log(num1 + " es multiplo de " + num2);
-    return true;
-  } else {
-    console.log(num1 + " NO es multiplo de " + num2);
-    return false;
-  }
-}
-
-let num1: number = Number(prompt("Ingrese el Primer Numero: "));
-let num2: number = Number(prompt("Ingrese el Segundo Numero: "));
-
-console.log(esMultiplo(num1, num2));*/
-
 function esMultiplo(dividendo: number, divisor: number): boolean {
   if (dividendo % divisor === 0) {
     return true;
