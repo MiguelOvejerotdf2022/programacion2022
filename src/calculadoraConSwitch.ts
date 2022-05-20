@@ -1,9 +1,9 @@
 /*Realizar el ejercicio de la calculadora con 4 operaciones
 (suma, resta, multiplicacion y division) utilizando Switch 
 y la funcion dibujarLineas que veniamos usando*/
-function DibujarLinea() {
+function dibujarLinea(cantidadDeGuiones: number) {
   let linea: string = "-";
-  for (let indice: number = 0; indice <= 40; indice++) {
+  for (let indice: number = 1; indice < cantidadDeGuiones; indice++) {
     linea = linea + "-";
   }
   console.log(linea);
@@ -18,23 +18,23 @@ let opcion: number = Number(
 switch (opcion) {
   case 1:
     resultado = num1 + num2;
-    DibujarLinea();
+    dibujarLinea(20);
     console.log("La SUMA es: " + resultado);
-    DibujarLinea();
+    dibujarLinea(20);
     break;
 
   case 2:
     resultado = num1 - num2;
-    DibujarLinea();
+    dibujarLinea(20);
     console.log("La RESTA es: " + resultado);
-    DibujarLinea();
+    dibujarLinea(20);
     break;
 
   case 3:
     resultado = num1 * num2;
-    DibujarLinea();
+    dibujarLinea(20);
     console.log("La MULTIPLICACION ES: " + resultado);
-    DibujarLinea();
+    dibujarLinea(20);
     break;
 
   case 4:
@@ -44,9 +44,9 @@ switch (opcion) {
       );
     }
     resultado = num1 / num2;
-    DibujarLinea();
+    dibujarLinea(20);
     console.log("La DIVISION ES: " + resultado);
-    DibujarLinea();
+    dibujarLinea(20);
     break;
 
   default:
