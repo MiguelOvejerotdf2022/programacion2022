@@ -11,7 +11,4 @@ for (let indice: number = 0; indice < dimension; indice++) {
   );
   sumar_Elementos = sumar_Elementos + arregloSumar[indice];
 }
-
-for (let indice: number = 0; indice < dimension; indice++) {
-  console.log("La SUMA de los elementos cargados es " + sumar_Elementos);
-}
+console.log("La SUMA de los elementos cargados es " + sumar_Elementos);
