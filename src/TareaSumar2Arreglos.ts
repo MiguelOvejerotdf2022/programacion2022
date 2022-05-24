@@ -21,6 +21,6 @@ for (let indice: number = 0; indice < dimension; indice++) {
     "[ VECTOR 2 ] posicion " + (indice + 1) + " = " + arreglo2[indice]
   );
   console.log(
-    "[ VECTO SUMA ] posicion " + (indice + 1) + " --> " + arregloSuma[indice]
+    "[ VECTOR SUMA ] posicion " + (indice + 1) + " --> " + arregloSuma[indice]
   );
 }
