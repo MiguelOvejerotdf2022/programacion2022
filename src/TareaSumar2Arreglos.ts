@@ -8,12 +8,14 @@ let arreglo2: number[] = new Array(dimension);
 let arregloSuma: number[] = new Array(dimension);
 
 for (let indice: number = 0; indice < dimension; indice++) {
+  //Cargo datos Vector 1, 2 y Vector Suma.
   arreglo1[indice] = Number(prompt("VECTOR 1 - Posicion " + (indice + 1)));
   arreglo2[indice] = Number(prompt("VECTOR 2 - Posicion " + (indice + 1)));
   arregloSuma[indice] = arreglo1[indice] + arreglo2[indice];
 }
 
 for (let indice: number = 0; indice < dimension; indice++) {
+  //Muestro Datos cargados.
   console.log(
     "[ VECTOR 1 ] posicion " + (indice + 1) + " = " + arreglo1[indice]
   );
