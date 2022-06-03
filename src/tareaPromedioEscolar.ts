@@ -81,18 +81,9 @@ cargarYMostrarPromedio(
 
 buscarAlumno = prompt("Ingrese el Nombre del Alumno a buscar: ");
 
-for (
-  let indice: number = 0;
-  indice < arreglo_Nombres.length && arreglo_Nombres[indice] !== buscarAlumno;
-  indice++
-);
+for (let indice: number = 0; indice < arreglo_Nombres.length && arreglo_Nombres[indice] !== buscarAlumno;indice++);
 if (indice === arreglo_Nombres.length) {
   console.log("NO se encontro el Alumno que buscaba");
 } else {
-  console.log(
-    "Se encontro el Alumno que buscaba: " +
-      arreglo_Nombres[indice] +
-      " con PROMEDIO de " +
-      arreglo_Promedio[indice]
-  );
+  console.log("Se encontro el Alumno que buscaba: " +arreglo_Nombres[indice] +" con PROMEDIO de " +arreglo_Promedio[indice]);
 }
