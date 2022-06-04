@@ -10,19 +10,19 @@ El aula Amarilla no puede ser asignada porque la cantidad de personas es menor a
 de bancos disponibles. El aula Azul es descartada porque quedan más bancos inutilizados que en
 el aula Verde (6 versus 1).*/
 
-function aulaAsignada(cantidadNinos: number): void {
+function aulaAsignada(cantidadNinos: number): string {
   let aulaAzul: number = 40;
   let aulaVerde: number = 35;
   let aulaAmarilla: number = 30;
 
   if (cantidadNinos <= aulaAmarilla && cantidadNinos > 0) {
-    console.log("El AulA asignada es la AMARILLA");
+    return "AMARILLA";
   } else if (cantidadNinos <= aulaVerde && cantidadNinos >= 31) {
-    console.log("El AulA asignada es la VERDE");
+    return "VERDE";
   } else if (cantidadNinos <= aulaAzul && cantidadNinos >= 36) {
-    console.log("El AulA asignada es la AZUL");
+    return "AZUL";
   } else {
-    console.log("CAPACIDAD EXCEDIDA, NO HAY DISPONIBILIDAD");
+    return "NINGUNA, CAPACIDAD EXCEDIDA";
   }
 }
 
@@ -36,9 +36,9 @@ while (cantidadDeInfantes < 1) {
   );
 }
 
-aulaAsignada(cantidadDeInfantes);
+console.log("Aula asingnada: " + aulaAsignada(cantidadDeInfantes));
 
-/*function aulaAsignada():void{
+/*function aulaAsignada():void{   //OTRO METODO
 
 let aulaAzul:number = 40;
 let aulaVerde:number = 35;
