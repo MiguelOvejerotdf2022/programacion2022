@@ -13,7 +13,7 @@ let notaPractica: number;
 let notaProblemas: number;
 let notaTeorica: number;
 
-while (nombreAlumno !== " ") {
+ (nombreAlumno !== " ") {
   nombreAlumno = prompt("Alumno: ");
   notaPractica = Number(prompt("Ingrese la NOTA PRACTICA: "));
   notaProblemas = Number(prompt("Ingrese la NOTA DE PROBLEMAS: "));
