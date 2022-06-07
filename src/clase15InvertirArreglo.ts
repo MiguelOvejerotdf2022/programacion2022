@@ -15,12 +15,12 @@ for (let indice: number = 0; indice < longitud; indice++) {
   );
 }
 
-for (let indice: number = 0; indice < longitud; indice++) {
+/*for (let indice: number = 0; indice < longitud; indice++) {
   //Imprimo el arreglo antes de invertirlo para comprobar.
   console.log("Posicion " + (indice + 1) + " -> " + arregloInvertido[indice]);
-}
+}*/
 
-console.log("ARREGLO INVERTIDO ----");
+console.log("ARREGLO MOSTRADO AL REVES");
 for (let indice: number = longitud - 1; indice >= 0; indice--) {
   //Invierto el Arreglo.
   console.log("Posicion " + (indice + 1) + " -> " + arregloInvertido[indice]);
