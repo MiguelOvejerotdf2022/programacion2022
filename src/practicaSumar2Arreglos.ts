@@ -14,17 +14,23 @@ function cargarArreglo(arreglo_Parametro: number[]): void {
   }
 }
 
-function sumar_Vectores(
+function sumar_Arreglos(
   arreglo1: number[],
   arreglo2: number[],
   arreglo3: number[]
 ): number {
-  let indice: number = 0;
   for (let indice: number = 0; indice < arreglo1.length; indice++) {
     arreglo3[indice] = arreglo1[indice] + arreglo2[indice];
   }
-  return arreglo3[indice];
+  return arreglo3;
 }
+
+//Metodo sin RETORNO.
+/*function obtenerSuma(arreglo1:number[],arreglo2:number[],arreglo3:number[]):void{
+  for(let indice:number = 0;indice < arreglo1.length;indice++){
+    arreglo3[indice] = arreglo1[indice] + arreglo2[indice];
+  }
+}*/
 
 /*function mostrar_Suma(suma_Parametro:number[]):void{
   for(let indice:number = 0;indice<suma_Parametro.length;indice++){
@@ -35,11 +41,12 @@ function sumar_Vectores(
 let arreglo_1: number[] = new Array(3); //Declaro mis arreglos y les doy Dimension.
 let arreglo_2: number[] = new Array(3);
 let arreglo_Suma: number[] = new Array(3);
-let mostrar_Suma: number = sumar_Vectores(arreglo_1, arreglo_2, arreglo_Suma);
+let mostrar_Suma: number;
 
-cargarArreglo(arreglo_1); //Funcion que carga Primer Arreglo.
-cargarArreglo(arreglo_2); //Funcion que carga Primer Arreglo.
-console.log(mostrar_Suma); //Muestro la Funcion que retorna la SUMA de los arreglos que guarde previamente en una variable.
+cargarArreglo(arreglo_1); //Funcion que carga PRIMERO Arreglo.
+cargarArreglo(arreglo_2); //Funcion que carga SEGUNDO Arreglo.
+mostrar_Suma = sumar_Arreglos(arreglo_1, arreglo_2, arreglo_Suma); //Guardo la funcion de mostar SUMA en una variable.
+console.log("Suma: " + mostrar_Suma); //Muestro la Funcion que retorna la SUMA de los arreglos que guarde previamente en una variable.
 
 /* Cargo Arreglo 1.
 for (let indice: number = 0; indice < arreglo_1.length; indice++) {
